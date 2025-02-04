@@ -12,6 +12,13 @@
         "url": "https://github.com/felipegamadev/customer-management-model"
     },
     "license": "MIT",
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "api": "yarn workspace @customer-management-model/api",
+        "web": "yarn workspace @customer-management-model/web"
+    },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^6.4.0",
         "eslint": "^8.0.1",
